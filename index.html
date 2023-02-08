@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://kit.fontawesome.com/e8a6fd3e42.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV - Franco Flesia</title>
+    <link rel="icon" href="img/file-lines-regular.svg" type="image/gif">
+    <link rel="stylesheet" type="text/css" href="cv.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="cv.css">
+</head>
+
+<nav class="navbar navbar-expand-md fixed-top">
+	<!-- <a class="navbar-brand" href="#">Logo</a> -->
+	<button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="main-navigation">
+		<ul class="navbar-nav">
+			
+				<a class="nav-link" href="#scroll1">Experiencia</a>
+			
+				<a class="nav-link" href="#scroll2">Educación</a>
+			
+				<a class="nav-link" href="#scroll3">Cursos</a>
+			
+				<a class="nav-link" href="#scroll4">Habilidades</a>
+			
+				<a class="nav-link" href="#scroll5">Idiomas</a>
+			
+				<a class="nav-link" href="#scroll6">Contacto</a>
+			
+		</ul>
+	</div>
+</nav>
+
+<header class="page-header header container-fluid">
+    <div class="overlay"></div>
+    <div class="descripcion">
+        <img src="img/noah.jpg" class="rounded-circle" alt="Foto mia de perfil que no se cargó :(" style="max-width:100%;height:auto;">
+        <h1>¡Hola, soy Noah Graham!</h1>
+        <p>Programador y desarrollador web front-end que 
+            siempre está aprendiendo. Pasé por Assembly, Fortran, 
+            C++, PHP, Ruby y ahora HTML, CSS, JS y Bootstrap. Buscando siempre 
+            adaptarme a los nuevos desafíos.</p>
+    </div>
+</header>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="contenido">
+
+        <h1 id="scroll1">Experiencia</h1>
+        
+        <span>Cargo 1</span>   Año – Presente 
+        <br>Lugar<br>
+        <ul class="myUL">
+            <li>Descripción 1</li>
+            <li>Descripción 2</li>
+            <li>Descripción 3</li>
+        </ul>
+        <br>
+        <span>Cargo 2</span>   Año – Año <br>
+        Lugar <br>
+        <ul class="myUL">
+            <li>Descripción 1</li>
+            <li>Descripción 2</li>
+            <li>Descripción 3</li>
+        </ul>
+        
+        <h1 id="scroll2">Educación</h1>
+
+        <span>Título</span>	Año – Año
+        <br>Lugar<br>
+        <ul class="myUL">
+            <li>Descripción 1</li>
+            <li>Descripción 2</li>
+            <li>Descripción 3</li>
+        </ul>
+
+        <h1 id="scroll3">Cursos</h1>
+
+        <span>Título</span>	Año – Año 
+        <br>Lugar<br>
+        <ul class="myUL">
+            <li>Descripción 1</li>
+            <li>Descripción 2</li>
+            <li>Descripción 3</li>
+        </ul>
+        <br>
+        <span>Título</span>	Año – Año
+        <br>Lugar<br>
+        <ul class="myUL">
+            <li>Descripción 1</li>
+            <li>Descripción 2</li>
+            <li>Descripción 3</li>
+        </ul>
+        <br>
+        <span>Título</span>	Año – Año
+        <br>Lugar<br>
+        <ul class="myUL">
+            <li>Descripción 1</li>
+            <li>Descripción 2</li>
+            <li>Descripción 3</li>
+        </ul>
+
+        <h1 id="scroll4">Habilidades</h1>
+        Habilidad 1<br>
+        Habilidad 2<br>
+        Habilidad 3<br>
+        Habilidad 4<br>
+        Habilidad 5<br>
+        Habilidad 6<br>
+        
+        <h1 id="scroll5">Idiomas</h1>
+        Idioma 1<br>
+        Idioma 2<br>
+        
+        
+        <h1 id="scroll6">¡Contactame!</h1>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <address>
+                <i class="fa-solid fa-person"></i> Noah Graham <br>
+                <i class="fa-solid fa-envelope"></i> noah.graham@example.com<br>
+                <i class="fa-solid fa-phone"></i> (332) 506-9308<br>
+                <i class="fa-sharp fa-solid fa-location-dot"></i> 9079 Mcgowen St<br>
+                <i class="fa-solid fa-flag-usa"></i> USA
+            </address>
+
+            <button onclick="nuevaCita()">¡Probame!</button>
+            <div id="mostrarCita">
+
+            </div>
+            
+          </div>
+          <div class="col">
+            <form>
+                <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
+                <input type="email" class="form-control" placeholder="Email" name="email" required>
+                <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                <button>Enviar</button>
+            </form>
+            
+          </div>
+        </div>
+    </div>
+
+    <script src="cv.js"></script>
+</body>
+
+
+</html>
